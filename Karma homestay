@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karma Homestay | Sumoor Nubra</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* HERO SECTION */
+header {
+    background: url('your-image.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+header h1 {
+    background: rgba(0,0,0,0.6);
+    padding: 20px 30px;
+    border-radius: 12px;
+    font-size: 45px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+/* NAV */
+nav {
+    background: #3b2f2f;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd54f;
+}
+
+/* SECTION */
+section {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+/* ROOMS */
+.rooms {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* GALLERY */
+.gallery {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 280px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* REVIEWS */
+.review-box {
+    background: white;
+    margin: 15px auto;
+    padding: 20px;
+    width: 70%;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* MAP */
+iframe {
+    width: 90%;
+    height: 400px;
+    border-radius: 15px;
+    border: none;
+}
+
+/* FOOTER */
+footer {
+    background: #3b2f2f;
+    color: white;
+    padding: 20px;
+}
+
+/* WHATSAPP */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* SNOW */
+.snowflake {
+    position: fixed;
+    top: -10px;
+    color: white;
+    font-size: 1em;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {transform: translateY(100vh);}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="#">Home</a>
+<a href="#rooms">Rooms</a>
+<a href="#gallery">Gallery</a>
+<a href="#reviews">Reviews</a>
+<a href="#map">Location</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<header>
+<h1>Karma Homestay<br>Sumoor, Nubra Valley</h1>
+</header>
+
+<section>
+<h2>Welcome</h2>
+<p>Authentic Ladakhi hospitality hosted by <strong>Tsering Spalzin</strong>.  
+Peaceful village stay with mountain views and warm comfort.</p>
+</section>
+
+<section id="rooms">
+<h2>Our 3 Rooms</h2>
+<div class="rooms">
+<div class="card">
+<h3>Deluxe Room</h3>
+<p>Comfortable stay with attached bathroom.</p>
+</div>
+<div class="card">
+<h3>Mountain View Room</h3>
+<p>Wake up to stunning Nubra scenery.</p>
+</div>
+<div class="card">
+<h3>Family Room</h3>
+<p>Spacious room perfect for families.</p>
+</div>
+</div>
+</section>
+
+<section id="gallery">
+<h2>Photo Gallery</h2>
+<div class="gallery">
+<img src="photo1.jpg">
+<img src="photo2.jpg">
+<img src="photo3.jpg">
+<img src="photo4.jpg">
+</div>
+</section>
+
+<section id="reviews">
+<h2>Guest Reviews</h2>
+<div class="review-box">
+⭐⭐⭐⭐⭐  
+"Very peaceful stay with amazing hospitality!" – Guest from Delhi
+</div>
+<div class="review-box">
+⭐⭐⭐⭐⭐  
+"Clean rooms and beautiful surroundings." – Traveller
+</div>
+<div class="review-box">
+⭐⭐⭐⭐⭐  
+"Best homestay experience in Nubra Valley." – Booking.com Guest
+</div>
+</section>
+
+<section id="map">
+<h2>Our Location</h2>
+<!-- Replace src with your exact Google Maps embed link -->
+<iframe src="https://www.google.com/maps?q=Sumoor,Nubra&output=embed"></iframe>
+</section>
+
+<section id="contact">
+<h2>Contact & Booking</h2>
+<p>📍 Sumoor, Nubra Valley, Ladakh</p>
+<p>📞 Phone / WhatsApp: 60056474</p>
+<p>🌐 Also available on Booking.com</p>
+</section>
+
+<footer>
+© 2026 Karma Homestay | All Rights Reserved
+</footer>
+
+<a class="whatsapp" href="https://wa.me/9160056474" target="_blank">
+Book on WhatsApp
+</a>
+
+<script>
+// Snowfall effect
+for (let i = 0; i < 40; i++) {
+    let snow = document.createElement("div");
+    snow.className = "snowflake";
+    snow.innerHTML = "❄";
+    snow.style.left = Math.random() * 100 + "vw";
+    snow.style.animationDuration = (Math.random() * 5 + 5) + "s";
+    snow.style.fontSize = (Math.random() * 10 + 10) + "px";
+    document.body.appendChild(snow);
+}
+</script>
+
+</body>
+</html>
